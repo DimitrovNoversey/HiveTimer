@@ -7,6 +7,7 @@
 	<meta name="version" content="1.1.1" />
 	<title>Hive Speedrunning YouTube Frame Timer</title>
 	<link rel="stylesheet" href="https://stackedit.io/style.css" />
+  <link rel="stylesheet" href="style.css" class="css">
 	<link rel="shortcut icon" href="https://i.imgur.com/3V3LjjY.png" type="image/ico" />
 	<script src="main.js">
 
@@ -16,9 +17,6 @@
 <body class="stackedit">
 	<div class="stackedit__html">
 		<h1 id="youtube-interval-timer">Hive Speedrunning YouTube Frame Timer</h1>
-		<h3 id="about">Hive Timing Rules</h3>
-		<p><a href="https://www.hivespeedrunning.tk/rules">Here</a> you can read all the rules we follow when re-timing your runs.
-			Try to follow them as best as you can while re-timing your own runs! :D
 			<p>
 				<h3 id="video-framerate">Video Framerate</h3>
 				<p>Right click the YouTube video and select “Stats for nerds.” The third line is “Current / Optimal Res” - find the two
@@ -34,11 +32,11 @@
     </p>
     <p>
       <label for="startobj">Starting frame: </label>
-      <input type="text" id="startobj" style='width:100%' onchange='parseForTime(event)' />
+      <input type="text" id="startobj" onchange='parseForTime(event)' />
     </p>
     <p>
       <label for="endobj">Ending frame: </label>
-      <input type="text" id="endobj" style='width:100%' onchange='parseForTime(event)' />
+      <input type="text" id="endobj" onchange='parseForTime(event)' />
     </p>
     <h3 id="video-time">Video Time</h3>
     <button id="computeButton" onclick="compute()">Compute time</button>&nbsp;<input type="text" id="time" readonly
@@ -47,10 +45,10 @@
       <textarea id="modMessage" cols="40" rows="5" disabled></textarea>
     </p>
     <button id="modMessageButton" onclick="copyModMessage()" disabled>Copy Mod Message to Clipboard</button>     <button onClick="window.location.reload();">Refresh Page</button><br>
-    <button id="modMessageButton2" onclick="copyModMessage2()" disabled>Copy Mod Message to Clipboard and Refresh Page</button><br><br>
+    <button id="modMessageButton2" onclick="copyModMessage2()" disabled>Copy Mod Message to Clipboard and Refresh Page</button>
 
-    Other versions of this website don't point this out (even though they have the same problem), but make sure to <code><b>ALWAYS REFRESH YOUR PAGE</b></code> when retiming a new run, mainly because of the fps not updating in the equation!
-		<p><a href="https://www.hivespeedrunning.tk">← Home</a></p>
+    <p class="warning">Other versions of this website don't point this out (even though they have the same problem), but make sure to <code><b>ALWAYS REFRESH YOUR PAGE</b></code> when retiming a new run, mainly because of the fps not updating in the equation!</p>
+		<p><a href="/#">I get it, I don't need help anymore :)</a></p>
   </div>
 </body>
 
